@@ -22,6 +22,7 @@ export const Ear = styled.div<{ dir: 'left' | 'right'; earColor?: string }>`
         earColor ? earColor : 'linear-gradient(#7f21ab, #103ee2)'};
     transform: ${({ dir }) =>
         dir === 'right' ? 'rotate(54deg)' : 'rotate(306deg)'};
+    z-index: ${({ dir }) => dir === 'left' && 1};
 `
 export const FaceWrapper = styled.div<{ color?: string }>`
     ${Face};
@@ -35,18 +36,19 @@ export const EyeWrapper = styled.div`
     position: relative;
     top: 50%;
     left: 30%;
-    width: 44px;
+    width: 46px;
     display: flex;
     justify-content: space-between;
 `
 
 export const Eye = styled.div<{ eyeColor?: string }>`
     width: 9px;
-    height: 10px;
+    height: 8px;
     background: ${({ eyeColor }) =>
         eyeColor ? eyeColor : 'linear-gradient(#550098, #1c0032)'};
     border-radius: 5px;
     position: relative;
     display: inline-flex;
+    justify-content: center;
     padding-top: 2px;
 `
