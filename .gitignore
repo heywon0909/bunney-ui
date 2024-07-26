@@ -27,3 +27,5 @@ dist-ssr
 
 .yarn
 .env
+
+tsconfig.build.tsbuildinfo
