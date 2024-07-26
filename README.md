@@ -1,6 +1,7 @@
 # Welcom to Bunney UI 🐰
 
-This template provides a cutie Bunney ui components in your project.
+This template provides a cutie Bunney ui components in your project. <br/>
+### 🛑 only available **React** Project 🛑
 
 Currently, you can see more about in this storybook:
 
