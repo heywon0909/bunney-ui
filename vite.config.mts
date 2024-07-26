@@ -19,6 +19,7 @@ export default defineConfig({
             output: {
                 exports: 'named',
             },
+            external: ['@emotion/styled', '@emotion/react'],
         },
         sourcemap: true,
     },
