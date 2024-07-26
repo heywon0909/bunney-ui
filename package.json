@@ -1,57 +1,61 @@
 {
-  "name": "bunney-ui",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "files": [
-    "dist"
-  ],
-  "main": "./dist/bunney-ui.umd.cjs",
-  "module": "./dist/bunney-ui.js",
-  "exports": {
-    ".": {
-      "import": "./dist/bunney-ui.js",
-      "require": "./dist/bunney-ui.umd.cjs"
-    }
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview",
-    "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
-  },
-  "dependencies": {
-    "@emotion/react": "^11.13.0",
-    "@emotion/styled": "^11.13.0",
-    "init": "^0.1.2",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@chromatic-com/storybook": "1.6.1",
-    "@storybook/addon-essentials": "^8.2.6",
-    "@storybook/addon-interactions": "^8.2.6",
-    "@storybook/addon-links": "^8.2.6",
-    "@storybook/addon-onboarding": "^8.2.6",
-    "@storybook/blocks": "^8.2.6",
-    "@storybook/react": "^8.2.6",
-    "@storybook/react-vite": "^8.2.6",
-    "@storybook/test": "^8.2.6",
-    "@types/react": "^18.3.3",
-    "@types/react-dom": "^18.3.0",
-    "@typescript-eslint/eslint-plugin": "^7.15.0",
-    "@typescript-eslint/parser": "^7.15.0",
-    "@vitejs/plugin-react": "^4.3.1",
-    "eslint": "^8.57.0",
-    "eslint-plugin-react-hooks": "^4.6.2",
-    "eslint-plugin-react-refresh": "^0.4.7",
-    "eslint-plugin-storybook": "^0.8.0",
-    "storybook": "^8.2.6",
-    "typescript": "^5.2.2",
-    "vite": "^5.3.4",
-    "vite-plugin-svgr": "^4.2.0"
-  },
-  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+    "name": "bunney-ui",
+    "private": true,
+    "version": "0.0.0",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "main": "./dist/bunney-ui.umd.cjs",
+    "module": "./dist/bunney-ui.js",
+    "exports": {
+        ".": {
+            "import": "./dist/bunney-ui.js",
+            "require": "./dist/bunney-ui.umd.cjs"
+        }
+    },
+    "scripts": {
+        "dev": "vite",
+        "build": "tsc -p tsconfig.build.json && vite build",
+        "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+        "preview": "vite preview",
+        "storybook": "storybook dev -p 6006",
+        "build-storybook": "storybook build",
+        "chromatic": "dotenv -- bash -c \"npx chromatic --project-token=$REACT_APP_STORYBOOK_KEY\""
+    },
+    "dependencies": {
+        "@emotion/react": "^11.13.0",
+        "@emotion/styled": "^11.13.0",
+        "dotenv-cli": "^7.4.2",
+        "init": "^0.1.2",
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1"
+    },
+    "devDependencies": {
+        "@chromatic-com/storybook": "1.6.1",
+        "@storybook/addon-essentials": "^8.2.6",
+        "@storybook/addon-interactions": "^8.2.6",
+        "@storybook/addon-links": "^8.2.6",
+        "@storybook/addon-onboarding": "^8.2.6",
+        "@storybook/blocks": "^8.2.6",
+        "@storybook/react": "^8.2.6",
+        "@storybook/react-vite": "^8.2.6",
+        "@storybook/test": "^8.2.6",
+        "@types/react": "^18.3.3",
+        "@types/react-dom": "^18.3.0",
+        "@typescript-eslint/eslint-plugin": "^7.15.0",
+        "@typescript-eslint/parser": "^7.15.0",
+        "@vitejs/plugin-react": "^4.3.1",
+        "chromatic": "^11.5.6",
+        "eslint": "^8.57.0",
+        "eslint-plugin-react-hooks": "^4.6.2",
+        "eslint-plugin-react-refresh": "^0.4.7",
+        "eslint-plugin-storybook": "^0.8.0",
+        "storybook": "^8.2.6",
+        "typescript": "^5.2.2",
+        "vite": "^5.3.4",
+        "vite-plugin-dts": "^4.0.0-beta.1",
+        "vite-plugin-svgr": "^4.2.0"
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }
