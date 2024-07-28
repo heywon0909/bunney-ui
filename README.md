@@ -1,14 +1,15 @@
-# Welcom to Bunney UI 🐰
+# Welcome to Bunney UI 🐰
 
 This template provides a cutie Bunney ui components in your project. <br/>
+
 ### 🛑 only available **React** Project 🛑
 
 Currently, you can see more about in this storybook:
 
-- [https://66a3007c89b826b0637ef2e5-pbvghnahmy.chromatic.com/](https://66a3007c89b826b0637ef2e5-eevclacczg.chromatic.com/)
+-   [https://66a3007c89b826b0637ef2e5-pbvghnahmy.chromatic.com/](https://66a3007c89b826b0637ef2e5-eevclacczg.chromatic.com/)
 
+### Available list
 
-### Available list 
 1. Bunney 🐰
 
 ![image](https://github.com/user-attachments/assets/95c119d9-c0b7-4bc6-aa97-068c00e187a1)
@@ -20,7 +21,7 @@ Currently, you can see more about in this storybook:
 ![image](https://github.com/user-attachments/assets/372f2f15-1169-4c92-b44f-e7670c9fe264)
 
 3. Mackey
-   
+
 ![image](https://github.com/user-attachments/assets/32510d35-7853-4562-bdf9-710d59f7ef30)
 ![image](https://github.com/user-attachments/assets/ac088a3f-7233-4ace-be99-2cf3733ce958)
 
@@ -36,7 +37,6 @@ Currently, you can see more about in this storybook:
 ![image](https://github.com/user-attachments/assets/5445639e-3742-4c03-9f35-60efa0b92cc2)
 ![image](https://github.com/user-attachments/assets/b17a4d9f-15e8-4011-b52f-dda877503e89)
 
-
 you can make custom Bunney with **Bunney-ui** 😎
 
-
+More info, heywon0909(https://github.com/heywon0909/bunney-ui)
