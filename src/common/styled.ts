@@ -6,6 +6,13 @@ export const ColumnWrapper = styled.div`
     flex-direction: column;
 `
 
+export const WholeBunney = styled(ColumnWrapper)`
+    justify-content: center;
+    align-items: center;
+    gap: 0;
+    position: relative;
+`
+
 export const Face = css`
     margin: 0;
     border-radius: 75%;

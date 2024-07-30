@@ -1,5 +1,7 @@
 import * as S from './styled'
 import StartIcon from '../../public/Start.svg?react'
+import { WholeBunney } from '@/common/styled'
+
 export interface BunneyProps {
     color?: string
     earColor?: string
@@ -7,7 +9,7 @@ export interface BunneyProps {
 }
 export const Bunney = ({ color, earColor, eyeColor }: BunneyProps) => {
     return (
-        <S.WholeBunney>
+        <WholeBunney>
             <S.EarWrapper>
                 <S.Ear dir="left" earColor={earColor} />
                 <S.Ear dir="right" earColor={earColor} />
@@ -22,6 +24,6 @@ export const Bunney = ({ color, earColor, eyeColor }: BunneyProps) => {
                     </S.Eye>
                 </S.EyeWrapper>
             </S.FaceWrapper>
-        </S.WholeBunney>
+        </WholeBunney>
     )
 }

@@ -1,12 +1,5 @@
+import { Face } from '@/common/styled'
 import styled from '@emotion/styled'
-import { ColumnWrapper, Face } from '../common/styled'
-
-export const WholeBunney = styled(ColumnWrapper)`
-    justify-content: center;
-    align-items: center;
-    gap: 0;
-    position: relative;
-`
 
 export const EarWrapper = styled.div`
     display: flex;
