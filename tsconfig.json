@@ -28,7 +28,14 @@
         /*Emit*/
         "declaration": true,
         "emitDeclarationOnly": true,
-        "outDir": "dist"
+        "outDir": "dist",
+
+        "paths": {
+            "@": ["src"],
+            "@/*": ["src/*"],
+            "@/common": ["src/common/styled.ts"],
+            "@/common/*": ["src/common/*"]
+        }
     },
     "include": ["src"]
 }

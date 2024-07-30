@@ -23,6 +23,20 @@ export default defineConfig({
         },
         sourcemap: true,
     },
+    resolve: {
+        alias: [
+            { find: '@', replacement: resolve(__dirname, 'src') },
+            { find: '@/*', replacement: resolve(__dirname, 'src/*') },
+            {
+                find: '@/common',
+                replacement: resolve(__dirname, 'src/common'),
+            },
+            {
+                find: '@/common/*',
+                replacement: resolve(__dirname, 'src/common/*'),
+            },
+        ],
+    },
     plugins: [
         react(),
         svgr(),
