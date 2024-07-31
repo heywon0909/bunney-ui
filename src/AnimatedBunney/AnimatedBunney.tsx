@@ -1,18 +1,23 @@
 import { WholeBunney } from '@/common/styled'
 import * as S from './styled'
-import { useRef } from 'react'
+import { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
 import StartIcon from '../../public/Start.svg?react'
-// import { Box } from '@/common/Box'
+import { GsapEffect } from '@/common/GsapEffect'
+
 export interface BunneyProps {
     color?: string
     earColor?: string
     eyeColor?: string
 }
 gsap.registerPlugin(useGSAP)
+
 export const AnimatedBunney = ({ color, earColor, eyeColor }: BunneyProps) => {
     const container = useRef<HTMLDivElement>(null)
+    const boxRef = useRef<HTMLDivElement>(null)
+
+    const [effect] = useState<'pulse' | 'shake' | 'spin'>('pulse')
 
     useGSAP(
         () => {
@@ -33,6 +38,25 @@ export const AnimatedBunney = ({ color, earColor, eyeColor }: BunneyProps) => {
         { scope: container }
     ) //
 
+    gsap.registerEffect({
+        name: 'pulse',
+        effect(targets: gsap.TweenTarget) {
+            return gsap.fromTo(
+                targets,
+                {
+                    scale: 1,
+                },
+                {
+                    scale: 1.15,
+                    repeat: -1,
+                    ease: 'bounce',
+                    yoyoEase: 'power3',
+                    yoyo: true,
+                    repeatDelay: 1,
+                }
+            )
+        },
+    })
     return (
         <WholeBunney>
             <S.EarWrapper ref={container}>
@@ -45,12 +69,16 @@ export const AnimatedBunney = ({ color, earColor, eyeColor }: BunneyProps) => {
             </S.EarWrapper>
             <S.FaceWrapper color={color}>
                 <S.EyeWrapper>
-                    <S.Eye eyeColor={eyeColor}>
-                        <StartIcon className="box" />
-                    </S.Eye>
-                    <S.Eye eyeColor={eyeColor}>
-                        <StartIcon className="box" />
-                    </S.Eye>
+                    <GsapEffect targetRef={boxRef} effect={effect}>
+                        <S.Eye eyeColor={eyeColor} ref={boxRef}>
+                            <StartIcon className="box" />
+                        </S.Eye>
+                    </GsapEffect>
+                    <GsapEffect targetRef={boxRef} effect={effect}>
+                        <S.Eye eyeColor={eyeColor} ref={boxRef}>
+                            <StartIcon className="box" />
+                        </S.Eye>
+                    </GsapEffect>
                 </S.EyeWrapper>
             </S.FaceWrapper>
         </WholeBunney>
