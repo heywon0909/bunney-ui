@@ -47,7 +47,7 @@ export const AnimatedBunney = ({ color, earColor, eyeColor }: BunneyProps) => {
                     scale: 1,
                 },
                 {
-                    scale: 1.15,
+                    scale: 1.4,
                     repeat: -1,
                     ease: 'bounce',
                     yoyoEase: 'power3',
@@ -71,12 +71,22 @@ export const AnimatedBunney = ({ color, earColor, eyeColor }: BunneyProps) => {
                 <S.EyeWrapper>
                     <GsapEffect targetRef={boxRef} effect={effect}>
                         <S.Eye eyeColor={eyeColor} ref={boxRef}>
-                            <StartIcon className="box" />
+                            <StartIcon
+                                className="box"
+                                ref={
+                                    boxRef as unknown as React.RefObject<SVGSVGElement>
+                                }
+                            />
                         </S.Eye>
                     </GsapEffect>
                     <GsapEffect targetRef={boxRef} effect={effect}>
                         <S.Eye eyeColor={eyeColor} ref={boxRef}>
-                            <StartIcon className="box" />
+                            <StartIcon
+                                className="box"
+                                ref={
+                                    boxRef as unknown as React.RefObject<SVGSVGElement>
+                                }
+                            />
                         </S.Eye>
                     </GsapEffect>
                 </S.EyeWrapper>

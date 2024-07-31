@@ -42,8 +42,8 @@ export const EyeWrapper = styled.div`
 `
 
 export const Eye = styled.div<{ eyeColor?: string }>`
-    width: 9px;
-    height: 8px;
+    min-width: 9px;
+    min-height: 8px;
     background: ${({ eyeColor }) =>
         eyeColor ? eyeColor : 'linear-gradient(#550098, #1c0032)'};
     border-radius: 5px;
