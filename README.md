@@ -37,6 +37,11 @@ Currently, you can see more about in this storybook:
 ![image](https://github.com/user-attachments/assets/5445639e-3742-4c03-9f35-60efa0b92cc2)
 ![image](https://github.com/user-attachments/assets/b17a4d9f-15e8-4011-b52f-dda877503e89)
 
+6. AnimatedBunney
+
+-   This is REAL Animated Bunney using GSAP.
+-   more detail, check out **AnimatedBunney**
+
 you can make custom Bunney with **Bunney-ui** 😎
 
 More info, heywon0909(https://github.com/heywon0909/bunney-ui)
