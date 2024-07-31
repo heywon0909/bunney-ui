@@ -39,7 +39,9 @@ Currently, you can see more about in this storybook:
 
 6. AnimatedBunney
 <img src="https://github.com/user-attachments/assets/63ceb4d9-38d5-48c8-b9cf-63cb065ee811" width="150" height="150"/>
+<img src="https://github.com/user-attachments/assets/92d71712-aad4-47fe-9e88-b8be0b8d9c7b" />
 <br/>
+
 
   -   This is REAL Animated Bunney using GSAP.
   -   more detail, check out **AnimatedBunney**
