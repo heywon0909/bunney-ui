@@ -1,6 +1,6 @@
 {
     "name": "bunney-ui",
-    "version": "0.0.9",
+    "version": "0.0.9-test-6",
     "type": "module",
     "files": [
         "dist"
@@ -8,6 +8,43 @@
     "main": "dist/index.cjs.js",
     "module": "dist/index.es.js",
     "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "import": "./dist/root.js",
+            "require": "./dist/root.js",
+            "types": "./dist/root.d.ts"
+        },
+        "./Bunney": {
+            "import": "./dist/Bunney.js",
+            "require": "./dist/Bunney.cjs",
+            "types": "./dist/Bunney.d.ts"
+        },
+        "./Mackey": {
+            "import": "./dist/Mackey.js",
+            "require": "./dist/Mackey.cjs",
+            "types": "./dist/Mackey.d.ts"
+        },
+        "./Logo": {
+            "import": "./dist/Logo.js",
+            "require": "./dist/Logo.cjs",
+            "types": "./dist/Logo.d.ts"
+        },
+        "./TechBunney": {
+            "import": "./dist/TechBunney.js",
+            "require": "./dist/TechBunney.cjs",
+            "types": "./dist/TechBunney.d.ts"
+        },
+        "./SmileyBunney": {
+            "import": "./dist/SmileyBunney.js",
+            "require": "./dist/SmileyBunney.cjs",
+            "types": "./dist/SmileyBunney.d.ts"
+        },
+        "./AnimatedBunney": {
+            "import": "./dist/AnimatedBunney.js",
+            "require": "./dist/AnimatedBunney.cjs",
+            "types": "./dist/AnimatedBunney.d.ts"
+        }
+    },
     "scripts": {
         "dev": "vite",
         "build": "tsc -p tsconfig.build.json && vite build",

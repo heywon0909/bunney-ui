@@ -10,15 +10,22 @@ export default defineConfig({
     build: {
         outDir: 'dist',
         lib: {
-            entry: resolve(__dirname, 'src/index.ts'),
+            entry: {
+                // root: resolve(__dirname, 'src/index.ts'),
+                Bunney: resolve(__dirname, 'src/Bunney/index.ts'),
+                AnimatedBunney: resolve(
+                    __dirname,
+                    'src/AnimatedBunney/index.ts'
+                ),
+                Logo: resolve(__dirname, 'src/Logo/index.ts'),
+                TechBunney: resolve(__dirname, 'src/TechBunney/index.ts'),
+                SmileyBunney: resolve(__dirname, 'src/SmileyBunney/index.ts'),
+                Mackey: resolve(__dirname, 'src/Mackey/index.ts'),
+            },
             name: 'bunney-ui',
             formats: ['es', 'cjs'],
-            fileName: (format) => `index.${format}.js`,
         },
         rollupOptions: {
-            output: {
-                exports: 'named',
-            },
             external: ['@emotion/styled', '@emotion/react'],
         },
         sourcemap: true,
