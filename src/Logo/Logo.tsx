@@ -1,16 +1,9 @@
-import * as S from './styled'
-export interface LogoProps{
-    color?: string;
-    size?: number;
+import {Logo as LogoCommon,LogoProps as LogoCommonProps} from '@/common/Logo'
+export interface LogoProps extends LogoCommonProps{
+
 }
 export const Logo = ({color,size}:LogoProps) => {
     return (
-        <S.WholeBunney>
-            <S.EarWrapper>
-                <S.Ear dir="left" earColor={color} size={size} />
-                <S.Ear dir="right" earColor={color} size={size}/>
-            </S.EarWrapper>
-            <S.FaceWrapper color={color} size={size} />
-        </S.WholeBunney>
+        <LogoCommon color={color} size={size}/>
     )
 }

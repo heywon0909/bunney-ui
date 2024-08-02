@@ -3,7 +3,7 @@ import * as S from './styled'
 import { useRef, useState } from 'react'
 import gsap from 'gsap'
 import { useGSAP } from '@gsap/react'
-import StartIcon from '../../public/Start.svg?react'
+import StartIcon from '/src/assets/Start.svg?react'
 import { GsapEffect } from '@/common/GsapEffect'
 
 export interface BunneyProps {
