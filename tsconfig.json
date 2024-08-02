@@ -28,7 +28,8 @@
         /*Emit*/
         "declaration": true,
         "emitDeclarationOnly": true,
-        "outDir": "dist",
+        "declarationDir": "dist",
+        "outDir": "dist/",
 
         "paths": {
             "@": ["src"],
