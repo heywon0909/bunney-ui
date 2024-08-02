@@ -1,9 +1,8 @@
 
+import { Mackey, MackeyProps } from '@/common/Mackey';
 import * as S from './styled'
-import { Bunney } from '../Bunney';
-import { Mackey } from '../Mackey';
-import { BunneyProps } from '../Bunney/Bunney';
-import { MackeyProps } from '../Mackey/Mackey';
+
+import { Bunney, BunneyProps } from '@/common/Bunney';
 
 export interface TechBunneyProps extends BunneyProps,MackeyProps{
 

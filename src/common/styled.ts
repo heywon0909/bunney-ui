@@ -18,13 +18,62 @@ export const Face = css`
     border-radius: 75%;
 `
 
+export const EarWrapper = styled.div`
+    display: flex;
+    position: absolute;
+    top: -39%;
+`
+export const Ear = styled.div<{
+    dir: 'left' | 'right'
+    earColor?: string
+    size?: number
+}>`
+    margin: 0;
+    width: ${({ size }) => (size ? size * 4 + 'px' : '46px')};
+    height: ${({ size }) => (size ? size * 8 + 'px' : '80px')};
+    border-radius: 50%;
+    background: ${({ earColor }) =>
+        earColor ? earColor : 'linear-gradient(#7f21ab, #103ee2)'};
+    transform: ${({ dir }) =>
+        dir === 'right' ? 'rotate(54deg)' : 'rotate(306deg)'};
+`
+export const FaceWrapper = styled.div<{ color?: string; size?: number }>`
+    ${Face};
+    width: ${({ size }) => (size ? 13 * size + 'px' : '117px')};
+    height: ${({ size }) => (size ? 11 * size + 'px' : '102px')};
+    background: ${({ color }) =>
+        color ? color : 'linear-gradient(#3531ff, #cf5cc4)'};
+`
+export const EyeWrapper = styled.div`
+    position: relative;
+    top: 50%;
+    left: 30%;
+    width: 46px;
+    display: flex;
+    justify-content: space-between;
+`
+
 export const Eye = styled.div<{ eyeColor?: string }>`
     width: 9px;
-    height: 10px;
+    height: 8px;
     background: ${({ eyeColor }) =>
         eyeColor ? eyeColor : 'linear-gradient(#550098, #1c0032)'};
     border-radius: 5px;
     position: relative;
     display: inline-flex;
+    justify-content: center;
     padding-top: 2px;
+`
+export const Mac = styled.div<{ size?: number }>`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: ${({ size }) => (size ? size * 19 + 'px' : '139px')};
+    height: ${({ size }) => (size ? size * 12 + 'px' : '82px')};
+    background: linear-gradient(
+        #cecece 9%,
+        #ebebeb 41%,
+        #eeeded 65%,
+        #d2cfcf 100%
+    );
 `

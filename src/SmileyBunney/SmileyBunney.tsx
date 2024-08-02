@@ -1,4 +1,5 @@
-import { Bunney } from '../Bunney'
+
+import { Bunney } from '@/common/Bunney'
 import SmileIcon from '../../public/Smile.svg?react'
 import * as S from './styled'
 
