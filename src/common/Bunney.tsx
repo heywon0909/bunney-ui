@@ -1,5 +1,5 @@
 import * as S from './styled'
-import StartIcon from '/public/Start.svg?react'
+import StartIcon from '/src/assets/Start.svg?react'
 import { WholeBunney } from '@/common/styled'
 
 export interface BunneyProps {
