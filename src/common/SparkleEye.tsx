@@ -36,11 +36,11 @@ export const SparkleEye = () => {
     
 
     return (
-         <S.EyeWrapper>
-                <S.Eye ref={rightContainer} height={10}>
+         <S.EyeWrapper width={40}>
+                <S.Eye ref={rightContainer} height={8}>
                 <StartIcon />
                 </S.Eye>
-                <S.Eye ref={leftContainer} height={10}>
+                <S.Eye ref={leftContainer} height={8}>
                     <StartIcon />
                 </S.Eye>
         </S.EyeWrapper>

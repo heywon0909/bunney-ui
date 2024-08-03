@@ -50,11 +50,11 @@ export const FaceWrapper = styled.div<{ color?: string; size?: number }>`
     background: ${({ color }) =>
         color ? color : 'linear-gradient(#3531ff, #cf5cc4)'};
 `
-export const EyeWrapper = styled.div`
+export const EyeWrapper = styled.div<{ width?: number }>`
     position: relative;
     top: 50%;
     left: 30%;
-    width: 46px;
+    width: ${({ width }) => (width ? width + 'px' : '46px')};
     display: flex;
     justify-content: space-between;
 `

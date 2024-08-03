@@ -12,9 +12,8 @@ export const BunneyLoading = () => {
     const containers = useRef<Array<HTMLDivElement>>([]);
 
 
-  
     useGSAP(() => {
-        containers.current.map((v,i) => {
+        containers.current?.map((v,i) => {
             gsap.fromTo(v,  {ease: "bounce.inOut", y: -12 * i },
             {yoyo:true,repeat:-1, duration: 0.5,y: -200}
         )    
@@ -25,12 +24,12 @@ export const BunneyLoading = () => {
 
     return (
         <RowWrapper>
-            {bunneys.map(({key,value}) => {
+            {bunneys?.map(({key,value}) => {
                 return (
                     <div ref={el => {
-                        if(el) containers.current.push(el)
+                        if(el) containers.current?.push(el)
                     }} key={key}>
-                    <Logo color={value} size={9}>
+                    <Logo color={value} size={7}>
                         <SparkleEye />
                     </Logo>
                     </div>    
