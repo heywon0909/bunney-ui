@@ -42,6 +42,11 @@ Currently, you can see more about in this storybook:
 <img src="https://github.com/user-attachments/assets/92d71712-aad4-47fe-9e88-b8be0b8d9c7b" />
 <br/>
 
+7. LoadingBunney
+<img src="https://github.com/user-attachments/assets/853808e5-5fb3-460b-82fe-4038780a8bb4" width="500" height="500"/>
+
+<br/>
+
 
   -   This is REAL Animated Bunney using GSAP.
   -   more detail, check out **AnimatedBunney**
