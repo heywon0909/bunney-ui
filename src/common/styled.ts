@@ -6,6 +6,12 @@ export const ColumnWrapper = styled.div`
     flex-direction: column;
 `
 
+export const RowWrapper = styled.div`
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+`
+
 export const WholeBunney = styled(ColumnWrapper)`
     justify-content: center;
     align-items: center;
@@ -53,9 +59,9 @@ export const EyeWrapper = styled.div`
     justify-content: space-between;
 `
 
-export const Eye = styled.div<{ eyeColor?: string }>`
+export const Eye = styled.div<{ eyeColor?: string; height?: number }>`
     width: 9px;
-    height: 8px;
+    height: ${({ height }) => (height ? height + 'px' : '8px')};
     background: ${({ eyeColor }) =>
         eyeColor ? eyeColor : 'linear-gradient(#550098, #1c0032)'};
     border-radius: 5px;
