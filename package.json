@@ -48,6 +48,21 @@
             "import": "./dist/BunneyLoading.js",
             "require": "./dist/BunneyLoading.cjs",
             "types": "./dist/BunneyLoading.d.ts"
+        },
+        "./SantaBunney": {
+            "import": "./dist/SantaBunney.js",
+            "require": "./dist/SantaBunney.cjs",
+            "types": "./dist/SantaBunney.d.ts"
+        },
+        "./CookieBunney": {
+            "import": "./dist/CookieBunney.js",
+            "require": "./dist/CookieBunney.cjs",
+            "types": "./dist/CookieBunney.d.ts"
+        },
+        "./SnowBunney": {
+            "import": "./dist/SnowBunney.js",
+            "require": "./dist/SnowBunney.cjs",
+            "types": "./dist/SnowBunney.d.ts"
         }
     },
     "scripts": {
