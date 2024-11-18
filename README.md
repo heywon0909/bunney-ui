@@ -6,8 +6,9 @@ This template provides a cutie Bunney ui components in your project. <br/>
 
 Currently, you can see more about in this storybook:
 
--   [https://66a3007c89b826b0637ef2e5-vwesquknfk.chromatic.com/](https://66a3007c89b826b0637ef2e5-vwesquknfk.chromatic.com/)
+-   [https://66a3007c89b826b0637ef2e5-fraqdokmcb.chromatic.com/?path=/story/bunney-ui-colorbunney--primary](storybook demo version)
 
+-   christmas version has been updated ! 🧑‍🎄
 ### Available list
 
 1. Bunney 🐰
