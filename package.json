@@ -57,7 +57,7 @@
         "preview": "vite preview",
         "storybook": "storybook dev -p 6006",
         "build-storybook": "storybook build",
-        "chromatic": "dotenv -- bash -c \"npx chromatic --project-token=$REACT_APP_STORYBOOK_KEY\""
+        "chromatic": "dotenv -- bash -c \"npx chromatic --project-token=chpt_b85e7df807038f6\""
     },
     "dependencies": {
         "@emotion/react": "^11.13.0",
