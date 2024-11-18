@@ -61,7 +61,7 @@ export const EyeWrapper = styled.div<{ width?: number }>`
 
 export const Eye = styled.div<{ eyeColor?: string; height?: number }>`
     width: 9px;
-    height: ${({ height }) => (height ? height + 'px' : '8px')};
+    height: ${({ height }) => (height ? height + 'px' : '10px')};
     background: ${({ eyeColor }) =>
         eyeColor ? eyeColor : 'linear-gradient(#550098, #1c0032)'};
     border-radius: 5px;
