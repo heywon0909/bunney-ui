@@ -10,39 +10,57 @@ export const SparkleEye = () => {
     const leftContainer = useRef<HTMLDivElement>(null)
     useGSAP(
         () => {
-            gsap.fromTo(rightContainer.current, {
-                duration: 1, 
-                stagger: 0.3,
-                scale:1
-            },
-            {duration:1,stagger:0.2,yoyo:true,repeatDelay:2,  repeat: -1,scaleY:0.1})
+            gsap.fromTo(
+                rightContainer.current,
+                {
+                    duration: 1,
+                    stagger: 0.3,
+                    scale: 1,
+                },
+                {
+                    duration: 1,
+                    stagger: 0.2,
+                    yoyo: true,
+                    repeatDelay: 2,
+                    repeat: -1,
+                    scaleY: 0.1,
+                }
+            )
             // Target the two specific elements we have asigned the animate class
         },
         { scope: rightContainer }
     ) //
     useGSAP(
         () => {
-            gsap.fromTo(leftContainer.current, {
-                duration: 1, 
-                stagger: 0.3,
-                scale:1
-            },
-            {duration:1,stagger:0.2,yoyo:true,repeatDelay:2,  repeat: -1,scaleY:0.1})
+            gsap.fromTo(
+                leftContainer.current,
+                {
+                    duration: 1,
+                    stagger: 0.3,
+                    scale: 1,
+                },
+                {
+                    duration: 1,
+                    stagger: 0.2,
+                    yoyo: true,
+                    repeatDelay: 2,
+                    repeat: -1,
+                    scaleY: 0.1,
+                }
+            )
             // Target the two specific elements we have asigned the animate class
         },
         { scope: leftContainer }
     ) //
 
-    
-
     return (
-         <S.EyeWrapper width={40}>
-                <S.Eye ref={rightContainer} height={8}>
+        <S.EyeWrapper width={38}>
+            <S.Eye ref={rightContainer} height={9}>
                 <StartIcon />
-                </S.Eye>
-                <S.Eye ref={leftContainer} height={8}>
-                    <StartIcon />
-                </S.Eye>
+            </S.Eye>
+            <S.Eye ref={leftContainer} height={9}>
+                <StartIcon />
+            </S.Eye>
         </S.EyeWrapper>
     )
 }

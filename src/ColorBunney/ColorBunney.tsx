@@ -17,14 +17,16 @@ export const ColorBunney = ({ color, earColor, eyeColor }: BunneyProps) => {
             // Target the two specific elements we have asigned the animate class
             gsap.to(boxRef.current, {
                 rotation: 360,
-                x: '100vw',
-                xPercent: 0,
+                x: '200px',
+                xPercent: 10,
                 // special properties
-                duration: 2.5, // how long the animation lasts
+                duration: 2, // how long the animation lasts
                 repeat: -1, // the number of repeats - this will play 3 times
                 yoyo: true, // this will alternate back and forth on each repeat. Like a yoyo
+                ease: 'sine',
             })
         },
+
         { scope: boxRef }
     ) //
 

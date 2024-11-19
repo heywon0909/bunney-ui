@@ -10,8 +10,8 @@ export const WholeBunney = styled(ColumnWrapper)`
 
 export const Body = styled.div`
     position: absolute;
-    width: 174px;
-    height: 150px;
+    width: 144px;
+    height: 120px;
     background: linear-gradient(#ffffff, #cccccc);
     border-radius: 9rem;
     top: 85%;
@@ -33,5 +33,5 @@ export const RightArm = styled.div`
     background: #45302d;
     position: absolute;
     top: 129%;
-    left: 138px;
+    left: 110px;
 `
