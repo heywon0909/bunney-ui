@@ -52,8 +52,8 @@ Currently, you can see more about in this storybook:
 
 
 10. SantaBunney
-   <br/>
-![santa](https://github.com/user-attachments/assets/2688a6de-e3e1-442e-bb94-8fe200bf7e9b)
+
+![santa](https://github.com/user-attachments/assets/194ab7f2-5458-452b-96c3-d3a741527d93)
 
 <br/>
 
