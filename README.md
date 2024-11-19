@@ -46,7 +46,21 @@ Currently, you can see more about in this storybook:
 7. LoadingBunney
 <img src="https://github.com/user-attachments/assets/853808e5-5fb3-460b-82fe-4038780a8bb4" width="500" height="500"/>
 
+
+8. SantaBunney
+   <br/>
+![santa](https://github.com/user-attachments/assets/2688a6de-e3e1-442e-bb94-8fe200bf7e9b)
+
 <br/>
+
+9. CookieBunney
+<br/>
+<img src="https://github.com/user-attachments/assets/dbd4307a-94bf-4956-a2e4-bb2b4d3728d7" width="150" height="150"/>
+
+10. SnowBunney
+<br/>
+<img src="https://github.com/user-attachments/assets/1ae028dd-8b4f-401f-b3c2-eec17fcf8cef" width="300" height="300" />
+
 
 
   -   This is REAL Animated Bunney using GSAP.
