@@ -63,6 +63,16 @@
             "import": "./dist/SnowBunney.js",
             "require": "./dist/SnowBunney.cjs",
             "types": "./dist/SnowBunney.d.ts"
+        },
+        "./ColorBunney": {
+            "import": "./dist/ColorBunney.js",
+            "require": "./dist/ColorBunney.cjs",
+            "types": "./dist/ColorBunney.d.ts"
+        },
+        "./MadBunney": {
+            "import": "./dist/MadBunney.js",
+            "require": "./dist/MadBunney.cjs",
+            "types": "./dist/MadBunney.d.ts"
         }
     },
     "scripts": {

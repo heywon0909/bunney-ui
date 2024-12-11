@@ -25,6 +25,8 @@ export default defineConfig({
                 SantaBunney: resolve(__dirname, 'src/SantaBunney/index.ts'),
                 CookieBunney: resolve(__dirname, 'src/CookieBunney/index.ts'),
                 SnowBunney: resolve(__dirname, 'src/SnowBunney/index.ts'),
+                ColorBunney: resolve(__dirname, 'src/ColorBunney/index.ts'),
+                MadBunney: resolve(__dirname, 'src/MadBunney/index.ts'),
             },
             name: 'bunney-ui',
             formats: ['es', 'cjs'],
